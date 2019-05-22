@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">wu</string>
+    <string name="menu_first">0</string>
+    <string name="menu_second">1</string>
+    <string name="menu_third">2</string>
+    <string name="menu_four">3</string>
+</resources>

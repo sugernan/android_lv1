@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sec_jingxuan"
+                        android:text="精选"
+                        android:checked="true"
+                        style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_Vip"
+                        android:text="VIP"
+                       style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_mianfei"
+                        android:text="免费"
+                        style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_man"
+                        android:text="男频"
+                        style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_women"
+                        android:text="女频"
+                        style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_newbook"
+                        android:text="新书"
+                        style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_chuban"
+                        android:text="出版"
+                        style="@style/scr_text" />
+
+                    <RadioButton
+                        android:id="@+id/sec_dongman"
+                        android:text="动漫"
+                        style="@style/scr_text"
+                        android:layout_marginRight="20dp"/>
+                </RadioGroup>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/sec_caidan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/green_reader_top_more_32_32"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+<EditText
+    android:id="@+id/sec_sousuo"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="6"
+    android:drawableLeft="@drawable/ic_to_be_continued"
+    android:hint="最强兵王"
+    />
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="2"
+    android:textSize="21dp"
+    android:gravity="center"
+    android:drawableLeft="@drawable/bookcity_classify"
+    android:drawablePadding="0dp"
+    android:text="分类"/>
+</LinearLayout>
+
+<com.youth.banner.Banner
+    android:id="@+id/sec_banner"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

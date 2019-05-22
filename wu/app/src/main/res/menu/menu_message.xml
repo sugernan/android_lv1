@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/mu_tongbu"
+        android:title="同步书籍" />
+
+    <item android:id="@+id/mu_saomiao"
+        android:title="扫描本地书籍" />
+
+    <item android:id="@+id/mu_WiFi"
+        android:title="Wi-Fi传书" />
+
+    <item android:id="@+id/yijian"
+        android:title="意见反馈" />
+
+    <item android:id="@+id/neight"
+        android:title="夜间模式" />
+</menu>

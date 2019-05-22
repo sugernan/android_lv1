@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_tou"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+
+                    android:src="@drawable/img_default"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="zssq7959"
+                    android:layout_marginTop="30dp"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/img_tou" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@id/tv_name"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/forum_icon_level_4_39_12"/>
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_toEndOf="@id/img_tou"
+                android:text="ID:  5fesdfsdfergfgds..."
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="复制"
+                android:textSize="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/tv_id"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/tv_id"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/left_jiantou"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_title_big_mask"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</FrameLayout>
